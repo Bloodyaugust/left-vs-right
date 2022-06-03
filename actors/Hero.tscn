@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dnwljavlrdivi"]
+
+[ext_resource type="Script" path="res://actors/Hero.gd" id="1_fymau"]
+[ext_resource type="Texture2D" uid="uid://5nejr1b2cp2w" path="res://sprites/hero.png" id="1_xhe6x"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tnwkn"]
+radius = 5.38516
+
+[node name="Hero" type="RigidDynamicBody2D" groups=["heros"]]
+gravity_scale = 0.0
+contacts_reported = 1
+contact_monitor = true
+lock_rotation = true
+script = ExtResource( "1_fymau" )
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource( "1_xhe6x" )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( "CircleShape2D_tnwkn" )

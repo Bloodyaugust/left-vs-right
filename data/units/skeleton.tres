@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://clqj0vhynn482"]
+
+[ext_resource type="Script" path="res://data/UnitResource.gd" id="1_clfun"]
+[ext_resource type="Texture2D" uid="uid://ugha6hfa0x7j" path="res://sprites/skeleton.png" id="2_30dty"]
+
+[resource]
+script = ExtResource( "1_clfun" )
+armor = 1.0
+attack_interval = 1.0
+damage = 2.0
+health = 5.0
+speed = 1.0
+sprite = ExtResource( "2_30dty" )
