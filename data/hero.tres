@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://nirlbk82s4j3"]
+
+[ext_resource type="Script" path="res://data/UnitResource.gd" id="1_ecj5y"]
+[ext_resource type="Texture2D" uid="uid://5nejr1b2cp2w" path="res://sprites/hero.png" id="2_s6wbt"]
+
+[resource]
+script = ExtResource( "1_ecj5y" )
+armor = 1.0
+attack_interval = null
+damage = null
+health = 10.0
+speed = 6.0
+sprite = ExtResource( "2_s6wbt" )

@@ -9,5 +9,5 @@ armor = 1.0
 attack_interval = 1.0
 damage = 2.0
 health = 5.0
-speed = 1.0
+speed = 5.0
 sprite = ExtResource( "2_30dty" )

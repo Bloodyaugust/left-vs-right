@@ -28,3 +28,7 @@ config/features=PackedStringArray("4.0", "Vulkan Clustered")
 [autoload]
 
 GDUtil="*res://lib/util/GDUtil.gd"
+
+[display]
+
+window/dpi/allow_hidpi=false

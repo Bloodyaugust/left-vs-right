@@ -10,6 +10,10 @@ current = true
 zoom = Vector2(2, 2)
 
 [node name="Unit" parent="." instance=ExtResource( "1_dyr7s" )]
+position = Vector2(-15, 44)
+
+[node name="Unit2" parent="." instance=ExtResource( "1_dyr7s" )]
+position = Vector2(18, -53)
 
 [node name="Hero" parent="." instance=ExtResource( "2_kwx80" )]
 position = Vector2(0, -12)
