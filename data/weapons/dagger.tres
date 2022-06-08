@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bd53jj1yv40q1"]
+
+[ext_resource type="Script" path="res://data/WeaponResource.gd" id="1_aqphc"]
+[ext_resource type="Texture2D" uid="uid://bhm158e58epfw" path="res://icon.png" id="1_oulqi"]
+
+[resource]
+script = ExtResource( "1_aqphc" )
+attack_interval = 0.5
+attack_sprite = ExtResource( "1_oulqi" )
+damage = 1.0

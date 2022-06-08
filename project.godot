@@ -13,9 +13,15 @@ _global_script_classes=[{
 "class": &"UnitResource",
 "language": &"GDScript",
 "path": "res://data/UnitResource.gd"
+}, {
+"base": "Resource",
+"class": &"WeaponResource",
+"language": &"GDScript",
+"path": "res://data/WeaponResource.gd"
 }]
 _global_script_class_icons={
-"UnitResource": ""
+"UnitResource": "",
+"WeaponResource": ""
 }
 
 [application]
