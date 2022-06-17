@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dnwljavlrdivi"]
+[gd_scene load_steps=6 format=3 uid="uid://dnwljavlrdivi"]
 
 [ext_resource type="Script" path="res://actors/Hero.gd" id="1_fymau"]
 [ext_resource type="Texture2D" uid="uid://5nejr1b2cp2w" path="res://sprites/hero.png" id="1_xhe6x"]
 [ext_resource type="Resource" uid="uid://nirlbk82s4j3" path="res://data/hero.tres" id="2_4pajk"]
+[ext_resource type="PackedScene" uid="uid://da4jbsybbym26" path="res://actors/weapons/Dagger.tscn" id="4_4fiwk"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tnwkn"]
 radius = 5.38516
@@ -18,3 +19,5 @@ texture = ExtResource( "1_xhe6x" )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( "CircleShape2D_tnwkn" )
+
+[node name="Weapon" parent="." instance=ExtResource( "4_4fiwk" )]

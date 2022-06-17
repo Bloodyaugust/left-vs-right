@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=3 uid="uid://da4jbsybbym26"]
+
+[ext_resource type="Script" path="res://actors/weapons/Weapon.gd" id="1_qanpe"]
+[ext_resource type="Resource" uid="uid://bd53jj1yv40q1" path="res://data/weapons/dagger.tres" id="2_nnido"]
+[ext_resource type="Texture2D" uid="uid://bhm158e58epfw" path="res://icon.png" id="3_6d1xf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uwewh"]
+
+[sub_resource type="Animation" id="Animation_abjvm"]
+resource_name = "attack"
+length = 0.25
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dhukq"]
+_data = {
+"attack": SubResource( "Animation_abjvm" )
+}
+
+[node name="Weapon" type="Node2D"]
+script = ExtResource( "1_qanpe" )
+data = ExtResource( "2_nnido" )
+
+[node name="AttackAreas" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="Area2D" type="Area2D" parent="AttackAreas"]
+position = Vector2(14, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackAreas/Area2D"]
+shape = SubResource( "RectangleShape2D_uwewh" )
+
+[node name="Area2D2" type="Area2D" parent="AttackAreas"]
+position = Vector2(-14, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackAreas/Area2D2"]
+shape = SubResource( "RectangleShape2D_uwewh" )
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+scale = Vector2(0.318, 0.324)
+texture = ExtResource( "3_6d1xf" )
+
+[node name="AttackAnimator" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource( "AnimationLibrary_dhukq" )
+}

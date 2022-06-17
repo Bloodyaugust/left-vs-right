@@ -1,9 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bgy0txb5ilo6t"]
+[gd_scene load_steps=3 format=3 uid="uid://bgy0txb5ilo6t"]
 
 [ext_resource type="PackedScene" uid="uid://bywptxniiewds" path="res://actors/Unit.tscn" id="1_dyr7s"]
 [ext_resource type="PackedScene" uid="uid://dnwljavlrdivi" path="res://actors/Hero.tscn" id="2_kwx80"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_uwewh"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -18,14 +16,4 @@ position = Vector2(-15, 44)
 position = Vector2(18, -53)
 
 [node name="Hero" parent="." instance=ExtResource( "2_kwx80" )]
-position = Vector2(0, -12)
 team = 1
-
-[node name="Weapon" type="Node2D" parent="."]
-
-[node name="AttackAreas" type="Node2D" parent="Weapon"]
-
-[node name="Area2D" type="Area2D" parent="Weapon/AttackAreas"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Weapon/AttackAreas/Area2D"]
-shape = SubResource( "RectangleShape2D_uwewh" )

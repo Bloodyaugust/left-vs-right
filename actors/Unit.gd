@@ -37,6 +37,8 @@ func _integrate_forces(state:PhysicsDirectBodyState2D):
 	if alive && _target != null:
 		var _direction_vector:Vector2 = global_position.direction_to(_target.global_position)
 		state.linear_velocity = _direction_vector * data.speed
+	else:
+		state.linear_velocity = Vector2.ZERO
 
 func _process(delta):
 	if alive:

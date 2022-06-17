@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource( "1_clfun" )
-armor = 1.0
+armor = null
 attack_interval = 1.0
 damage = 2.0
 health = 5.0
