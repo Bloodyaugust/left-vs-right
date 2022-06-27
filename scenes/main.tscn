@@ -1,6 +1,5 @@
-[gd_scene load_steps=3 format=3 uid="uid://bgy0txb5ilo6t"]
+[gd_scene load_steps=2 format=3 uid="uid://bgy0txb5ilo6t"]
 
-[ext_resource type="PackedScene" uid="uid://bywptxniiewds" path="res://actors/Unit.tscn" id="1_dyr7s"]
 [ext_resource type="PackedScene" uid="uid://dnwljavlrdivi" path="res://actors/Hero.tscn" id="2_kwx80"]
 
 [node name="Node2D" type="Node2D"]
@@ -8,12 +7,6 @@
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 zoom = Vector2(2, 2)
-
-[node name="Unit" parent="." instance=ExtResource( "1_dyr7s" )]
-position = Vector2(-15, 44)
-
-[node name="Unit2" parent="." instance=ExtResource( "1_dyr7s" )]
-position = Vector2(18, -53)
 
 [node name="Hero" parent="." instance=ExtResource( "2_kwx80" )]
 team = 1
